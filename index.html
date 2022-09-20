@@ -43,7 +43,7 @@
 		<fieldset>
 			<legend>Days Available:</legend>
 			<div>
-				<input type="checkbox" name="available_field[]" value="Sunday" id="sunday_checkbox"><label>Sunday </label><br>
+				<input type="checkbox" name="available_field[]" value="Sunday" id="sunday_checkbox"><label for ="sunday_checkbox">Sunday </label><br>
 				<input type="checkbox" name="available_field[]" value="Monday" id="monday"><label>Monday </label><br>
 				<input type="checkbox" name="available_field[]" value="Tuesday" id="tuesday"><label>Tuesday </label><br>
 				<input type="checkbox" name="available_field[]" value="Wednesday" id="wednesday"><label>Wednesday </label><br>
@@ -52,15 +52,11 @@
 				<input type="checkbox" name="available_field[]" value="Saturday" id="saturday"><label>Saturday </label>
 			</div>
 			<div>
-			<label for ="our_textarea">Any Comments?<label>
-				<div>
+			<label for ="our_textarea">Any Comments?</label><br>
 				<textarea cols="30" rows="10" name="comments_field" placeholder="comments" id="our_textarea"></textarea>
-				</div>
 			</div>
 		</fieldset>
-		<div>
-			<input type="hidden" name="hidden_field" value="dlim7">
-		</div>
+		<input type="hidden" name="hidden_field" value="dlim7">
 		<input type="submit" value="Send Me">
 	</form>
 </body>
