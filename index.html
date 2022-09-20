@@ -5,7 +5,7 @@
   <title>Lab 4</title>
 </head>
 <body>
-  <h1>Volunteer Form</h1>
+	<h2>Volunteer Form</h2>
 	<form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
 		<fieldset>
 			<p><strong>My Info</strong></p>
@@ -39,5 +39,21 @@
 				</select>
 			</div>
 		</fieldset>
+	<p><strong>My Availability</strong></p>
+		<fieldset>
+			<label>Days Available</label>
+			<label>Sunday <input type="checkbox" name="avaialble_field[]" value="sunday"></label><br>
+			<label>Monday <input type="checkbox" name="avaialble_field[]" value="monday"></label><br>
+			<label>Tuesday <input type="checkbox" name="avaialble_field[]" value="tuesday"></label><br>
+			<label>Wednesday <input type="checkbox" name="avaialble_field[]" value="wednesday"></label><br>
+			<label>Thursday <input type="checkbox" name="avaialble_field[]" value="thursday"></label><br>
+			<label>Friday <input type="checkbox" name="avaialble_field[]" value="friday"></label><br>
+			<label>Saturday <input type="checkbox" name="avaialble_field[]" value="saturday"></label>
+			<div>
+			<label for ="our_textarea">Any Comments?<label>
+				<textarea cols="30" rows="10" name="comments_field" placeholder="comments" id="our_textarea"></textarea>
+			</div>
+		</fieldset>
+	</form>
 </body>
 </html>
