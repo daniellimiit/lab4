@@ -8,10 +8,35 @@
   <h1>Volunteer Form</h1>
 	<form method="POST" autocomplete="on" action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" enctype="multipart/form-data">
 		<fieldset>
+			<p><strong>My Info</strong></p>
 			<div>
-			<label>First Name: <input type="text" name="first_name_field" placeholder="first name"></label>
+				<label>First Name: <input type="text" name="first_name_field" placeholder="first name"></label>
 			</div>
-			
+			<div>
+				<label>Last Name: <input type="text" name="last_name_field" placeholder="last name"></label>
+			</div>
+			<div>
+				<label>Phone Number: <input type="number" name="phone_field" placeholder="phone number"></label>
+			</div>
+			<div>
+				<label>Email Address: <input type="text" name="email_field" placeholder="email"></label>
+			</div>
+			<div>
+				<p>Gender</p>
+				<label>Male: <input type="radio" name="gender_field" value="m"></label>
+				<label>Female: <input type="radio" name="gender_field" value="f"></label>
+			</div>
+			<div>
+				<select name="age_field">
+				<option value="<18">under 18</option>
+				<option value="18-24">18-24</option>
+				<option value="25-34">25-34</option>
+				<option value="35-44">35-44</option>
+				<option value="45-54">45-54</option>
+				<option value="55-64">55-64</option>
+				<option value=">64">65 and over</option>
+				</select>
+			</div>
 		</fieldset>
 </body>
 </html>
